@@ -7,4 +7,6 @@ public interface UserService {
 
     User getUserById(Integer id);
 
+    Boolean addUser(User user);
+
 }
