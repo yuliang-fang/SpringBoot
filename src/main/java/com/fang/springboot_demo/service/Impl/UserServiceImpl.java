@@ -21,6 +21,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Boolean addUser(User user) {
-        return userDao.addUser(user.getName(),user.getAge());
+        return userDao.addUser(user.getName(), user.getAge());
     }
 }

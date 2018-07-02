@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 /**
- *  用户实体
+ * 用户实体
  */
 
 @Data
