@@ -6,6 +6,9 @@ import com.fang.springboot_demo.domain.User;
 import com.fang.springboot_demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import tk.mybatis.mapper.entity.Example;
+
+import java.util.List;
 
 @Service("UserService")
 public class UserServiceImpl implements UserService {
@@ -22,5 +25,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public Boolean addUser(User user) {
         return userDao.addUser(user.getName(), user.getAge());
+    }
+
+    @Override
+    public List<User> getAllUser() {
+        Example example = new Example(User.class);
+        return userDao.selectAll();
     }
 }

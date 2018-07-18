@@ -2,16 +2,16 @@ package com.fang.springboot_demo.dao;
 
 import com.fang.springboot_demo.domain.User;
 import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import tk.mybatis.mapper.common.Mapper;
 
 /**
  * 用户Dao
  */
 
-@Mapper
-public interface UserDao {
+//@Mapper
+public interface UserDao extends Mapper<User> {
 
     @Select("select id,name,age from demo_user where id=#{id}")
     User getUserById(@Param("id") Integer id);
