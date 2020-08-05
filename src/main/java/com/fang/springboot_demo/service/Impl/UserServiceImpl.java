@@ -6,6 +6,7 @@ import com.fang.springboot_demo.domain.User;
 import com.fang.springboot_demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
@@ -23,6 +24,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional              //添加事务
     public Boolean addUser(User user) {
         return userDao.addUser(user.getName(), user.getAge());
     }

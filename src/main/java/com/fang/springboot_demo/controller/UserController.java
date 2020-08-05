@@ -2,6 +2,8 @@ package com.fang.springboot_demo.controller;
 
 import com.fang.springboot_demo.domain.User;
 import com.fang.springboot_demo.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +14,10 @@ import java.util.List;
  */
 
 @RestController
+@RequestMapping(value = "/api/v1")
 public class UserController {
+
+    private Logger logger =LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     UserService userService;
@@ -31,8 +36,13 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> getAllUser(){
+        logger.debug("this is debug level");
+        logger.info("this is info level");
+        logger.error("this is error level");
         return userService.getAllUser();
     }
+    
+
 
 
 

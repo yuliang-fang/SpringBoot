@@ -12,7 +12,7 @@ import java.io.IOException;
  * 自定义过滤器
  */
 
-@WebFilter(urlPatterns = "/api/*",filterName = "loginFilter")  //urlPattern:拦截内容，filterName：拦截器名称
+@WebFilter(urlPatterns = "/api/filter",filterName = "loginFilter")  //urlPattern:拦截内容，filterName：拦截器名称
 public class LoginFilter implements Filter {
 
 

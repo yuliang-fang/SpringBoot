@@ -1,0 +1,3 @@
+2018-08-04 13:44:01.032 ERROR[http-nio-8888-exec-1]com.fang.springboot_demo.controller.UserController.getAllUser:41 -this is error level
+2018-08-04 13:46:49.790 ERROR[http-nio-8888-exec-6]com.fang.springboot_demo.controller.UserController.getAllUser:41 -this is error level
+2018-08-04 13:48:11.794 ERROR[http-nio-8888-exec-1]com.fang.springboot_demo.controller.UserController.getAllUser:41 -this is error level

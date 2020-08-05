@@ -1,0 +1,107 @@
+2018-11-01 22:05:40.623 INFO [main]com.fang.springboot_demo.SpringbootDemoApplication.logStarting:50 -Starting SpringbootDemoApplication on My-is with PID 2653 (/Users/haijuan/Documents/yuliangfang/workspace/myTest/SpringBoot/target/classes started by haijuan in /Users/haijuan/Documents/yuliangfang/workspace/myTest/SpringBoot)
+2018-11-01 22:05:40.628 INFO [main]com.fang.springboot_demo.SpringbootDemoApplication.logStartupProfileInfo:659 -No active profile set, falling back to default profiles: default
+2018-11-01 22:05:40.750 INFO [main]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:590 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dcb4f5f: startup date [Thu Nov 01 22:05:40 CST 2018]; root of context hierarchy
+2018-11-01 22:05:41.628 WARN [main]tk.mybatis.spring.mapper.ClassPathMapperScanner.doScan:142 -No MyBatis mapper was found in '[com.fang.springboot_demo]' package. Please check your configuration.
+2018-11-01 22:05:41.636 WARN [main]org.mybatis.spring.mapper.ClassPathMapperScanner.doScan:166 -No MyBatis mapper was found in '[com.fang.springboot_demo]' package. Please check your configuration.
+2018-11-01 22:05:42.799 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:91 -Tomcat initialized with port(s): 8888 (http)
+2018-11-01 22:05:42.828 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Initializing ProtocolHandler ["http-nio-8888"]
+2018-11-01 22:05:42.846 INFO [main]org.apache.catalina.core.StandardService.log:180 -Starting service [Tomcat]
+2018-11-01 22:05:42.846 INFO [main]org.apache.catalina.core.StandardEngine.log:180 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-11-01 22:05:42.852 INFO [localhost-startStop-1]org.apache.catalina.core.AprLifecycleListener.log:180 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/haijuan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-01 22:05:42.946 INFO [localhost-startStop-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring embedded WebApplicationContext
+2018-11-01 22:05:42.946 INFO [localhost-startStop-1]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:285 -Root WebApplicationContext: initialization completed in 2196 ms
+2018-11-01 22:05:43.207 INFO [localhost-startStop-1]o.s.boot.web.servlet.ServletRegistrationBean.addRegistration:186 -Servlet dispatcherServlet mapped to [/]
+2018-11-01 22:05:43.212 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 22:05:43.213 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 22:05:43.214 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 22:05:43.214 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 22:05:43.214 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:258 -Mapping filter: 'loginFilter' to urls: [/api/filter]
+2018-11-01 22:05:44.088 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 22:05:44.505 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:574 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dcb4f5f: startup date [Thu Nov 01 22:05:40 CST 2018]; root of context hierarchy
+2018-11-01 22:05:44.580 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/index]}" onto public java.lang.Object com.fang.springboot_demo.controller.FileUpLoadController.index()
+2018-11-01 22:05:44.582 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/upload]}" onto public java.lang.String com.fang.springboot_demo.controller.FileUpLoadController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-11-01 22:05:44.588 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/api/v1/user/{id}],methods=[GET]}" onto public com.fang.springboot_demo.domain.User com.fang.springboot_demo.controller.UserController.getUserById(java.lang.Integer)
+2018-11-01 22:05:44.589 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/api/v1/users],methods=[GET]}" onto public java.util.List<com.fang.springboot_demo.domain.User> com.fang.springboot_demo.controller.UserController.getAllUser()
+2018-11-01 22:05:44.590 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/api/v1/user],methods=[POST]}" onto public java.lang.Boolean com.fang.springboot_demo.controller.UserController.addUser(com.fang.springboot_demo.domain.User)
+2018-11-01 22:05:44.593 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 22:05:44.594 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 22:05:44.627 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 22:05:44.628 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 22:05:44.770 INFO [main]o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init>:61 -Adding welcome page template: index
+2018-11-01 22:05:44.847 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2018-11-01 22:05:44.848 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2018-11-01 22:05:44.849 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2018-11-01 22:05:44.851 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeEntityHelperCache:83 -Clear EntityHelper entityTableMap cache.
+2018-11-01 22:05:45.205 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated:433 -Registering beans for JMX exposure on startup
+2018-11-01 22:05:45.208 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-01 22:05:45.219 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:668 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-01 22:05:45.248 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Starting ProtocolHandler ["http-nio-8888"]
+2018-11-01 22:05:45.278 INFO [main]org.apache.tomcat.util.net.NioSelectorPool.log:180 -Using a shared selector for servlet write/read
+2018-11-01 22:05:45.303 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:206 -Tomcat started on port(s): 8888 (http) with context path ''
+2018-11-01 22:05:45.311 INFO [main]com.fang.springboot_demo.SpringbootDemoApplication.logStarted:59 -Started SpringbootDemoApplication in 5.377 seconds (JVM running for 8.106)
+2018-11-01 22:06:56.539 INFO [http-nio-8888-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-01 22:06:56.539 INFO [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:494 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-01 22:06:56.560 INFO [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:509 -FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-11-01 22:06:56.585 WARN [http-nio-8888-exec-1]org.springframework.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported:255 -Request method 'GET' not supported
+2018-11-01 22:06:59.970 WARN [http-nio-8888-exec-3]org.springframework.web.servlet.PageNotFound.handleHttpRequestMethodNotSupported:255 -Request method 'GET' not supported
+2018-11-01 22:07:14.763 INFO [http-nio-8888-exec-6]com.fang.springboot_demo.controller.UserController.getAllUser:40 -this is info level
+2018-11-01 22:07:14.816 INFO [http-nio-8888-exec-6]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2018-11-01 22:07:15.071 INFO [http-nio-8888-exec-6]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2018-11-01 22:10:12.928 INFO [Thread-14]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose:993 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5dcb4f5f: startup date [Thu Nov 01 22:05:40 CST 2018]; root of context hierarchy
+2018-11-01 22:10:12.932 INFO [Thread-14]o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy:451 -Unregistering JMX-exposed beans on shutdown
+2018-11-01 22:10:12.935 INFO [Thread-14]o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans:183 -Unregistering JMX-exposed beans
+2018-11-01 22:10:12.936 INFO [Thread-14]com.zaxxer.hikari.HikariDataSource.close:381 -HikariPool-1 - Shutdown initiated...
+2018-11-01 22:10:12.949 INFO [Thread-14]com.zaxxer.hikari.HikariDataSource.close:383 -HikariPool-1 - Shutdown completed.
+2018-11-01 22:10:21.751 INFO [main]com.fang.springboot_demo.SpringbootDemoApplication.logStarting:50 -Starting SpringbootDemoApplication on My-is with PID 2664 (/Users/haijuan/Documents/yuliangfang/workspace/myTest/SpringBoot/target/classes started by haijuan in /Users/haijuan/Documents/yuliangfang/workspace/myTest/SpringBoot)
+2018-11-01 22:10:21.760 INFO [main]com.fang.springboot_demo.SpringbootDemoApplication.logStartupProfileInfo:659 -No active profile set, falling back to default profiles: default
+2018-11-01 22:10:21.950 INFO [main]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:590 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@388526fb: startup date [Thu Nov 01 22:10:21 CST 2018]; root of context hierarchy
+2018-11-01 22:10:22.852 WARN [main]tk.mybatis.spring.mapper.ClassPathMapperScanner.doScan:142 -No MyBatis mapper was found in '[com.fang.springboot_demo]' package. Please check your configuration.
+2018-11-01 22:10:22.861 WARN [main]org.mybatis.spring.mapper.ClassPathMapperScanner.doScan:166 -No MyBatis mapper was found in '[com.fang.springboot_demo]' package. Please check your configuration.
+2018-11-01 22:10:23.904 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:91 -Tomcat initialized with port(s): 8888 (http)
+2018-11-01 22:10:23.917 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Initializing ProtocolHandler ["http-nio-8888"]
+2018-11-01 22:10:23.929 INFO [main]org.apache.catalina.core.StandardService.log:180 -Starting service [Tomcat]
+2018-11-01 22:10:23.929 INFO [main]org.apache.catalina.core.StandardEngine.log:180 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-11-01 22:10:23.934 INFO [localhost-startStop-1]org.apache.catalina.core.AprLifecycleListener.log:180 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/haijuan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-01 22:10:24.012 INFO [localhost-startStop-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring embedded WebApplicationContext
+2018-11-01 22:10:24.013 INFO [localhost-startStop-1]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:285 -Root WebApplicationContext: initialization completed in 2064 ms
+2018-11-01 22:10:24.215 INFO [localhost-startStop-1]o.s.boot.web.servlet.ServletRegistrationBean.addRegistration:186 -Servlet dispatcherServlet mapped to [/]
+2018-11-01 22:10:24.223 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-01 22:10:24.224 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-01 22:10:24.225 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-01 22:10:24.225 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-01 22:10:24.225 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:258 -Mapping filter: 'loginFilter' to urls: [/api/filter]
+2018-11-01 22:10:24.825 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 22:10:25.156 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:574 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@388526fb: startup date [Thu Nov 01 22:10:21 CST 2018]; root of context hierarchy
+2018-11-01 22:10:25.231 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/index]}" onto public java.lang.Object com.fang.springboot_demo.controller.FileUpLoadController.index()
+2018-11-01 22:10:25.233 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/upload]}" onto public java.lang.String com.fang.springboot_demo.controller.FileUpLoadController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-11-01 22:10:25.239 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/api/v1/test/{id}],methods=[GET]}" onto public java.lang.String com.fang.springboot_demo.controller.UserController.test(java.lang.String) throws java.lang.InterruptedException
+2018-11-01 22:10:25.239 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/api/v1/user],methods=[POST]}" onto public java.lang.Boolean com.fang.springboot_demo.controller.UserController.addUser(com.fang.springboot_demo.domain.User)
+2018-11-01 22:10:25.240 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/api/v1/user/{id}],methods=[GET]}" onto public com.fang.springboot_demo.domain.User com.fang.springboot_demo.controller.UserController.getUserById(java.lang.Integer)
+2018-11-01 22:10:25.240 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/api/v1/users],methods=[GET]}" onto public java.util.List<com.fang.springboot_demo.domain.User> com.fang.springboot_demo.controller.UserController.getAllUser()
+2018-11-01 22:10:25.243 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-01 22:10:25.244 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-01 22:10:25.280 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 22:10:25.281 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-01 22:10:25.420 INFO [main]o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init>:61 -Adding welcome page template: index
+2018-11-01 22:10:25.481 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2018-11-01 22:10:25.483 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2018-11-01 22:10:25.483 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2018-11-01 22:10:25.484 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeEntityHelperCache:83 -Clear EntityHelper entityTableMap cache.
+2018-11-01 22:10:25.739 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated:433 -Registering beans for JMX exposure on startup
+2018-11-01 22:10:25.741 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-11-01 22:10:25.748 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:668 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-11-01 22:10:25.763 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Starting ProtocolHandler ["http-nio-8888"]
+2018-11-01 22:10:25.783 INFO [main]org.apache.tomcat.util.net.NioSelectorPool.log:180 -Using a shared selector for servlet write/read
+2018-11-01 22:10:25.799 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:206 -Tomcat started on port(s): 8888 (http) with context path ''
+2018-11-01 22:10:25.804 INFO [main]com.fang.springboot_demo.SpringbootDemoApplication.logStarted:59 -Started SpringbootDemoApplication in 4.875 seconds (JVM running for 6.21)
+2018-11-01 22:10:51.415 INFO [http-nio-8888-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-01 22:10:51.415 INFO [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:494 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-01 22:10:51.453 INFO [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:509 -FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2018-11-01 22:10:51.524 INFO [http-nio-8888-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2018-11-01 22:10:51.763 INFO [http-nio-8888-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2018-11-01 22:15:13.513 WARN [HikariPool-1 housekeeper]com.zaxxer.hikari.pool.HikariPool.run:758 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s481ms).
+2018-11-01 22:15:13.586 INFO [Thread-13]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose:993 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@388526fb: startup date [Thu Nov 01 22:10:21 CST 2018]; root of context hierarchy
+2018-11-01 22:15:13.594 INFO [Thread-13]o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy:451 -Unregistering JMX-exposed beans on shutdown
+2018-11-01 22:15:13.596 INFO [Thread-13]o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans:183 -Unregistering JMX-exposed beans
+2018-11-01 22:15:13.598 INFO [Thread-13]com.zaxxer.hikari.HikariDataSource.close:381 -HikariPool-1 - Shutdown initiated...
+2018-11-01 22:15:13.643 INFO [Thread-13]com.zaxxer.hikari.HikariDataSource.close:383 -HikariPool-1 - Shutdown completed.
